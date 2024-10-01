@@ -225,3 +225,8 @@ def eingabe_birthday():
 tag, monat, jahr, sprache = eingabe_birthday()
 person = Person(tag, monat, jahr, sprache)
 person.ausgabe_informationen()
+
+weitere_anfrage = input("Möchtest du eine weitere Anfrage durchführen? (ja/nein): ").strip().lower()
+if weitere_anfrage != 'ja':
+    print("Programm beendet.")
+    
